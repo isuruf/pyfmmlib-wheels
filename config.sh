@@ -38,6 +38,10 @@ function build_osx_wheel {
     # Build wheel
     export LDSHARED="$CC $py_ld_flags"
     export LDFLAGS="$arch $py_ld_flags"
+    export PYFMMLIB_BUILD_MODE="setuptools"
+    export FOPT="-Ofast -fopenmp"
+    export OPT="-Ofast"
+    export EXTRA_LINK_ARGS="-fopenmp"
     build_wheel_cmd "bdist_wheel_cmd" "$repo_dir"
 }
 
