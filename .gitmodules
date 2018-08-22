@@ -1,0 +1,9 @@
+[submodule "multibuild"]
+	path = multibuild
+	url = https://github.com/matthew-brett/multibuild.git
+[submodule "pyfmmlib"]
+	path = pyfmmlib
+	url = https://github.com/inducer/pyfmmlib.git
+[submodule "gfortran-install"]
+	path = gfortran-install
+	url = https://github.com/MacPython/gfortran-install.git
