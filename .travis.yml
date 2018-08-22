@@ -10,6 +10,7 @@ env:
     # a separate install.
     - TEST_DEPENDS="pytest mako"
     - NP_BUILD_DEP="numpy==1.8.2"
+    - NP_TEST_DEP="numpy==1.8.2"
     - PLAT=x86_64
     - UNICODE_WIDTH=32
 
