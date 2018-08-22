@@ -38,7 +38,7 @@ function build_osx_wheel {
     # Build wheel
     export LDSHARED="$CC $py_ld_flags"
     export LDFLAGS="$arch $py_ld_flags"
-    build_wheel_cmd "$repo_dir"
+    build_wheel_cmd "bdist_wheel_cmd" "$repo_dir"
 }
 
 function run_tests {
